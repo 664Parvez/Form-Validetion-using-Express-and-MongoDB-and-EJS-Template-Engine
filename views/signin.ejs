@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%-include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>SignIn</title>
+</head>
+<body>
+    <%-include( './partials/menu.ejs' ) %>
+    
+    <h2 class="text-light mt-5 mb-4 text-center">Sign Up</h2>
+    <div class="container">
+        <form action="/signin" method="post">
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="" class="mt-3 text-light">First Name</label>
+                    <input type="text" name="firstname" placeholder="First" class="form-control">
+                </div>
+                <div class="col-lg-6">
+                    <label for="" class="mt-3 text-light">Last Name</label>
+                    <input type="text" name="lastname" placeholder="Last" class="form-control">
+                </div>
+                <div class="col-lg-6">
+                    <label for="" class="mt-3 text-light">Email</label>
+                    <input type="email" name="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male">
+                        <label class="form-check-label text-light" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female">
+                        <label class="form-check-label text-light" for="inlineRadio2">Female</label>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <label for="" class="mt-3 text-light">Age</label>
+                    <input type="number" name="age" placeholder="Age" class="form-control">
+                </div>
+                <div class="col-lg-6">
+                    <label for="" class="mt-3 text-light">Phone</label>
+                    <input type="phone" name="phone" placeholder="Phone" class="form-control">
+                </div>
+                <div class="col-lg-6">
+                    <label for="" class="mt-3 text-light">Password</label>
+                    <input type="password" name="password" placeholder="Password" class="form-control">
+                </div>
+                <div class="col-lg-6">
+                    <label for="" class="mt-3 text-light">Confirm Password</label>
+                    <input type="password" name="cpassword" placeholder="Confirm Password" class="form-control">
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-light mt-5">Signup</button>
+        </form>
+    </div>
+
+    <%-include ('./partials/bootJava.ejs') %>
+</body>
+</html>
+
